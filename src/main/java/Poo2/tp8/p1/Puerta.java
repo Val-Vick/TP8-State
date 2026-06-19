@@ -1,4 +1,4 @@
-package Poo2.p1;
+package Poo2.tp8.p1;
 
 public class Puerta {
 

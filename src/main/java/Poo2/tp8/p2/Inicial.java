@@ -1,25 +1,25 @@
 package Poo2.tp8.p2;
 
-public class EstadoInicial implements EstadoCalculadora {
+public class Inicial implements EstadoCalculadora {
 
 	@Override
 	public void mas(Calculadora calc) {
-		calc.cambiarEstado(new EsperandoOperando('+'));
+		calc.cambiarEstado(new EsperandoOperador('+'));
 	}
 
 	@Override
 	public void menos(Calculadora calc) {
-		calc.cambiarEstado(new EsperandoOperando('-'));
+		calc.cambiarEstado(new EsperandoOperador('-'));
 	}
 
 	@Override
 	public void por(Calculadora calc) {
-		calc.cambiarEstado(new EsperandoOperando('*'));
+		calc.cambiarEstado(new EsperandoOperador('*'));
 	}
 
 	@Override
 	public void dividido(Calculadora calc) {
-		calc.cambiarEstado(new EsperandoOperando('/'));
+		calc.cambiarEstado(new EsperandoOperador('/'));
 	}
 
 	@Override
